@@ -1,0 +1,41 @@
+MLOps Assignment 2
+
+Installation
+Install Apache Airflow:
+
+
+Install Dependencies:
+
+Copy code
+pip install -r requirements.txt
+Usage
+Start the Airflow Web Server:
+
+css
+Copy code
+airflow webserver --port 8081
+Start the Airflow Scheduler:
+
+Copy code
+airflow scheduler
+Access the Airflow Web Interface:
+
+Open a web browser and go to http://localhost:8081.
+You can trigger DAG runs and monitor their execution from the Airflow web interface.
+Directory Structure
+graphql
+Copy code
+mlops-airflow/
+├── dags/
+│   └── mlops_dag.py          # Apache Airflow DAG script
+├── scripts/
+│   └── scrapeLinks.py        # Python script for data extraction
+└──── processed_data.csv    # Processed data stored on Google Drive
+Contributing
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgements
+Thanks to Apache Airflow for providing a powerful platform for workflow automation.
+Special thanks to DVC for enabling efficient data version control.
